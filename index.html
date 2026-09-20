@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhoi Studio | Aircraft Database</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <img src="assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon">
+                <span class="logo-accent">SUKHOI</span> STUDIO
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="history.html"><i class='bx bx-history'></i> History</a></li>
+
+                <li class="dropdown-trigger">
+                    <a href="subwebs/su57.html" class="dropdown-link-title" aria-haspopup="true">
+                        <i class='bx bxs-paper-plane'></i> Aircraft Fleet 
+                        <i class='bx bx-chevron-down chevron-icon'></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+
+                            <div class="dropdown-column featured-jet">
+                                <div class="jet-tag">Flagship</div>
+                                <h3>Su-57 Felon</h3>
+                                <p>Russia's premier 5th-generation stealth air platform.</p>
+                                <a href="subwebs/su57.html" class="btn-dropdown">Explore Specs →</a>
+                            </div>
+
+                            <div class="dropdown-column">
+                                <span class="column-title">4th Gen Legacy</span>
+                                <ul class="submenu-links">
+                                    <li><a href="subwebs/su27.html"><i class='bx bx-shield-quarter'></i> Su-27 Flanker</a></li>
+                                    <li><a href="subwebs/su30.html"><i class='bx bx-crosshair'></i> Su-30 Multirole</a></li>
+                                    <li><a href="subwebs/su34.html"><i class='bx bx-target-lock'></i> Su-34 Fullback</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown-column">
+                                <span class="column-title">Modern Fleet</span>
+                                <ul class="submenu-links">
+                                    <li><a href="subwebs/su35.html"><i class='bx bxs-zap'></i> Su-35 Flanker-E</a></li>
+                                    <li><a href="subwebs/su47.html"><i class='bx bxs-component'></i> Su-47 Berkut</a></li>
+                                    <li><a href="subwebs/su75.html"><i class='bx bxs-hot'></i> Su-75 Checkmate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero home">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>AIR SUPERIORITY</h1>
+            <p>Explore the history, technology, and evolution of Sukhoi's legendary fighter aircraft, from the iconic Su-27 Flanker to the fifth-generation Su-57 Felon.</p>
+            <a href="#about" class="btn"><i class="bx bx-target-lock"></i> Explore the Fleet</a>
+            <div class="stat-card">
+
+                <div class="stat-item">
+                    <span class="stat-title">Founding Year</span>
+                    <h2 class="stat-value">1939</h2>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-title">Aircraft Designs</span>
+                    <h2 class="stat-value">40+</h2>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-title">Years of History</span>
+                    <h2 class="stat-value">85+</h2>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-title">Generation Fighter</span>
+                    <h2 class="stat-value">5th</h2>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about" data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bx-radar'></i> The Flanker Family</h2>
+                <div class="accent-line"></div>
+            </div>
+            <p>
+                The <strong>Sukhoi Su-27 Flanker</strong> is a twin-engine,
+                supermaneuverable air superiority fighter developed by the Sukhoi Design Bureau
+                during the Cold War. Designed in response to the United States Air Force's
+                McDonnell Douglas F-15 Eagle, the Su-27 entered service with the Soviet Air Forces
+                in 1985 and became one of the most capable fourth-generation fighters ever built.
+            </p>
+
+            <p>
+                The Su-27 formed the foundation of the renowned
+                <strong>Flanker family</strong>, which later expanded into specialized variants
+                including the multirole <strong>Su-30</strong>, carrier-based
+                <strong>Su-33</strong>, strike-focused <strong>Su-34</strong>,
+                highly modernized <strong>Su-35S</strong>, and ultimately the
+                fifth-generation <strong>Su-57 Felon</strong>.
+            </p>
+        </section>
+
+        <section id="fleet">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <h2><i class='bx bx-slider-alt'></i> Technical Specifications</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aircraft</th>
+                            <th>Role</th>
+                            <th>Generation</th>
+                            <th>Key Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Su-27 Flanker</strong></td>
+                            <td>Air Superiority Fighter</td>
+                            <td>4th Generation</td>
+                            <td>Long-range interceptor with excellent agility, large internal fuel capacity, and powerful N001 pulse-Doppler radar.</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Su-35S Flanker-E</strong></td>
+                            <td>Multirole Air Superiority Fighter</td>
+                            <td>4++ Generation</td>
+                            <td>AL-41F1S thrust-vectoring engines, Irbis-E passive electronically scanned array radar, digital fly-by-wire system, and advanced electronic warfare suite.</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Su-57 Felon</strong></td>
+                            <td>Stealth Multirole Fighter</td>
+                            <td>5th Generation</td>
+                            <td>Reduced radar signature, internal weapons bays, N036 Byelka AESA radar suite, sensor fusion, and supermaneuverability.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <h2><i class='bx bx-camera'></i> Visual Database</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <h3 class="subsection-title" data-aos="fade-right"><i class='bx bx-photo-album'></i> Image Gallery</h3>
+            <div class="media-grid images">
+                <div class="media-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sukhoi_Su-27SKM_at_MAKS-2005_airshow.jpg/330px-Sukhoi_Su-27SKM_at_MAKS-2005_airshow.jpg" alt="Su-27 Aircraft">
+                    <div class="media-overlay"><span>Su-27 Flanker</span></div>
+                </div>
+                <div class="media-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Russian_Air_Force%2C_RF-81719%2C_Sukhoi_Su-35S_%2849581740157%29.jpg" alt="Su-35 Aircraft">
+                    <div class="media-overlay"><span>Su-35 Flanker-E</span></div>
+                </div>
+                <div class="media-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sukhoi_Design_Bureau%2C_054%2C_Sukhoi_T-50_%28Su-57_prototype%29_%2849581303977%29.jpg" alt="Su-57 Aircraft">
+                    <div class="media-overlay"><span>Su-57 Felon</span></div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title" style="margin-top: 3rem;" data-aos="fade-right"><i class='bx bx-video'></i> Flight Footage</h3>
+            <div class="media-grid videos">
+                <div class="video-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <iframe src="https://www.youtube.com/embed/EK-ZeMY021g?si=hE-_06hdp4xZevEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <iframe src="https://www.youtube.com/embed/3iaYyYFicMw?si=FN_MDHYmGGxwbF8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <div class="logo"><img src="assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon"> <span class="logo-accent">SUKHOI</span> STUDIO</div>
+        <p>Celebrating the Legacy of Sukhoi Aviation</p>
+        <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
+        <div class="footer-line"></div>
+        <p id="warning">
+            * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
+            Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
+            Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru/en/" target="_blank">United Aircraft Corporation (UAC)</a>.
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

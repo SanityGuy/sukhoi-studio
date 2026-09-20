@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Sukhoi Design Bureau, the Su-27 Flanker family, and the fifth-generation Su-57 Felon with modern interactive webpages and historical information.">
+    <title>History | Sukhoi Studio<</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <img src="assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon">
+                <span class="logo-accent">SUKHOI</span> STUDIO
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="history.html"><i class='bx bx-history'></i> History</a></li>
+
+                <li class="dropdown-trigger">
+                    <a href="subwebs/su57.html" class="dropdown-link-title" aria-haspopup="true">
+                        <i class='bx bxs-paper-plane'></i> Aircraft Fleet 
+                        <i class='bx bx-chevron-down chevron-icon'></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+
+                            <div class="dropdown-column featured-jet">
+                                <div class="jet-tag">Flagship</div>
+                                <h3>Su-57 Felon</h3>
+                                <p>Russia's premier 5th-generation stealth air platform.</p>
+                                <a href="subwebs/su57.html" class="btn-dropdown">Explore Specs →</a>
+                            </div>
+
+                            <div class="dropdown-column">
+                                <span class="column-title">4th Gen Legacy</span>
+                                <ul class="submenu-links">
+                                    <li><a href="subwebs/su27.html"><i class='bx bx-shield-quarter'></i> Su-27 Flanker</a></li>
+                                    <li><a href="subwebs/su30.html"><i class='bx bx-crosshair'></i> Su-30 Multirole</a></li>
+                                    <li><a href="subwebs/su34.html"><i class='bx bx-target-lock'></i> Su-34 Fullback</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown-column">
+                                <span class="column-title">Modern Fleet</span>
+                                <ul class="submenu-links">
+                                    <li><a href="subwebs/su35.html"><i class='bx bxs-zap'></i> Su-35 Flanker-E</a></li>
+                                    <li><a href="subwebs/su47.html"><i class='bx bxs-component'></i> Su-47 Berkut</a></li>
+                                    <li><a href="subwebs/su75.html"><i class='bx bxs-hot'></i> Su-75 Checkmate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <header class="hero history">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>THE SUKHOI LEGACY</h1>
+            <p>
+                Founded by Pavel Sukhoi in 1939, the bureau has spent nearly a century driving tactical aviation forward. From early piston-engine bombers to Cold War interceptors and modern thrust-vectoring fighters, this history reflects a relentless pursuit of speed and extreme maneuverability.
+                <span class="fi fi-ru" id="flags"></span>
+            </p>
+            <a class="btn" href="#info"><i class="bx bx-history"></i> Explore the History</a>
+        </div>
+
+    </header>
+    
+    <div class="container">
+        <section id="info" data-aos="fade-up" data-aos-duration="800"></section>
+            <div class="section-header">
+                <h2><i class='bx bx-book-bookmark'></i> Pavel Sukhoi's Legacy</h2>
+                <div class="accent-line"></div>
+            </div>
+            <p>The Sukhoi Design Bureau (OKB-51) was founded in 1939 by Pavel Sukhoi. Early aircraft like the Su-2 light bomber laid the foundation for the bureau's deep integration with Soviet aviation forces. However, it was during the Cold War that Sukhoi truly began to define modern combat aviation.</p>
+            <p>Following Pavel Sukhoi's pioneering work, the bureau focused heavily on high-speed aerodynamics, variable-geometry wings, and unparalleled maneuverability. The creation of the Su-27 Flanker series in the late 1970s firmly established the bureau as a global leader in air superiority fighters.</p>
+        </section>
+        <div class="section-line-padding"></div>
+
+        <section id="history" data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bx-git-merge'></i> Evolutionary Milestones</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Aircraft</th>
+                            <th>Significance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1939</td>
+                            <td><strong>Sukhoi Design Bureau</strong></td>
+                            <td>Pavel Sukhoi established the Sukhoi Experimental Design Bureau (OKB-51), marking the beginning of one of the Soviet Union's most influential aircraft manufacturers.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1941-1945</td>
+                            <td><strong>World War II</strong></td>
+                            <td>The Su-2 light bomber served with the Soviet Air Force during the early years of World War II, becoming Sukhoi's first combat aircraft.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1960s</td>
+                            <td><strong>Cold War Expansion</strong></td>
+                            <td>Sukhoi developed advanced supersonic fighters including the Su-7, Su-9, Su-11, and Su-15 to defend Soviet airspace during the Cold War.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1975</td>
+                            <td><strong>T-10 Program</strong></td>
+                            <td>Development of the T-10 prototype began to counter the American F-15 Eagle, eventually evolving into the Su-27 Flanker.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1977</td>
+                            <td><strong>Su-27 Prototype</strong></td>
+                            <td>The T-10 prototype completed its maiden flight, beginning development of the legendary Flanker family.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1985</td>
+                            <td><strong>Su-27 Enters Service</strong></td>
+                            <td>The Su-27 officially entered Soviet service, becoming one of the world's premier air superiority fighters.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1989</td>
+                            <td><strong>Pugachev's Cobra</strong></td>
+                            <td>Test pilot Viktor Pugachev stunned the aviation world at the Paris Air Show by performing the famous "Pugachev's Cobra" maneuver with the Su-27.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1991</td>
+                            <td><strong>Soviet Union Dissolution</strong></td>
+                            <td>Following the collapse of the Soviet Union, Sukhoi transitioned into the Russian aerospace industry and expanded international exports.</td>
+                        </tr>
+
+                        <tr>
+                            <td>1997</td>
+                            <td><strong>Su-47 Berkut</strong></td>
+                            <td>The experimental Su-47 demonstrated forward-swept wing technology and advanced fly-by-wire control systems, influencing future fighter research.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2008</td>
+                            <td><strong>Su-35S</strong></td>
+                            <td>The extensively modernized Su-35 made its first flight, featuring thrust-vectoring engines, advanced avionics, and the Irbis-E radar.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2010</td>
+                            <td><strong>Su-57 Maiden Flight</strong></td>
+                            <td>The fifth-generation Su-57 prototype (T-50) completed its first flight, introducing stealth features and next-generation avionics.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2019</td>
+                            <td><strong>First Production Su-57</strong></td>
+                            <td>The first production Su-57 was completed, although it was lost during a pre-delivery test flight due to a control system malfunction.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2020</td>
+                            <td><strong>Su-57 Enters Service</strong></td>
+                            <td>The Russian Aerospace Forces officially accepted the first operational Su-57, marking the beginning of fifth-generation fighter service.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2021-Present</td>
+                            <td><strong>Modern Operations</strong></td>
+                            <td>Sukhoi aircraft including the Su-30SM, Su-34, Su-35S, and Su-57 continue serving with multiple air forces and remain among Russia's flagship combat aircraft.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <div class="logo"><img src="assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon"> <span class="logo-accent">SUKHOI</span> STUDIO</div>
+        <p>Celebrating the Legacy of Sukhoi Aviation</p>
+        <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
+        <div class="footer-line"></div>
+        <p id="warning">
+            * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
+            Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
+            Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru/en/" target="_blank">United Aircraft Corporation (UAC)</a>.
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
