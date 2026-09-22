@@ -3,47 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhoi Studio | Aircraft Details</title>
-    
-    <!-- Step out of 'subwebs', go into 'assets' to find the favicon -->
-    <link rel="icon" href="../assets/favicon.ico">
-    
-    <!-- Working Third-Party CDN Libraries -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link href="https://unpkg.com" rel="stylesheet">
-    <link href="https://unpkg.com" rel="stylesheet">
-    
-    <!-- CRITICAL FIX: Step out of 'subwebs' to link your main stylesheet -->
-    <link rel="stylesheet" href="../style.css">
+    <title>Su-35 Flanker-E | Sukhoi Studio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-
-
 <body>
     <nav>
         <div class="nav-content">
             <div class="logo">
-                <i class='bx bxs-plane-take-off logo-icon'></i>
+                <img src="../assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon">
                 <span class="logo-accent">SUKHOI</span> STUDIO
             </div>
             <ul class="nav-links">
-                <!-- Step OUT of subwebs folder for home and history -->
-                <li><a href="../index.html"><i class='bx bx-home'></i> Home</a></li>
-                <li><a href="../history.html"><i class='bx bx-history'></i> History</a></li>
-                
+                <li><a href="/index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="/history.html"><i class='bx bx-history'></i> History</a></li>
+
                 <li class="dropdown-trigger">
-                    <a href="su57.html" class="dropdown-link-title" aria-haspopup="true">
+                    <a href="#info" class="dropdown-link-title" aria-haspopup="true">
                         <i class='bx bxs-paper-plane'></i> Aircraft Fleet 
                         <i class='bx bx-chevron-down chevron-icon'></i>
                     </a>
                     <div class="dropdown-menu">
                         <div class="dropdown-grid">
+
                             <div class="dropdown-column featured-jet">
                                 <div class="jet-tag">Flagship</div>
                                 <h3>Su-57 Felon</h3>
                                 <p>Russia's premier 5th-generation stealth air platform.</p>
                                 <a href="su57.html" class="btn-dropdown">Explore Specs →</a>
                             </div>
-                            <!-- These files are side-by-side in the same subwebs folder. NO SLASHES OR DOTS! -->
+
                             <div class="dropdown-column">
                                 <span class="column-title">4th Gen Legacy</span>
                                 <ul class="submenu-links">
@@ -52,6 +48,7 @@
                                     <li><a href="su34.html"><i class='bx bx-target-lock'></i> Su-34 Fullback</a></li>
                                 </ul>
                             </div>
+
                             <div class="dropdown-column">
                                 <span class="column-title">Modern Fleet</span>
                                 <ul class="submenu-links">
@@ -65,47 +62,210 @@
                 </li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://w3.org" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
-                <svg class="moon-icon" xmlns="http://w3.org" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                 </svg>
             </button>
         </div>
     </nav>
 
-    <main class="placeholder-container">
-        <div class="placeholder-card" data-aos="fade-up" data-aos-duration="800">
-            <div class="radar-scan">
-                <i class='bx bx-radar placeholder-icon'></i>
-            </div>
+    <header class="hero su35">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>SU-35 FLANKER-E</h1>
-            <div class="accent-line m-auto"></div>
-            <p id="warning">Web Not Available Yet</p>
-            <a href="../index.html" class="btn"><i class='bx bx-left-arrow-alt'></i> Return to Hangar</a>
+            <p>The peak evolutionary iteration of the heavy air-superiority Flanker platform, incorporating 3D thrust vectoring and advanced long-range target tracking capabilities.
+            </p>
+            <a class="btn" href="#info"><i class="bx bx-radar"></i> Search for specifications</a>
         </div>
-    </main>
+    </header>
+    
+    <div class="container">
+        <section id="info" data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bxs-zap'></i> Air Superiority & Super-Maneuverability</h2>
+                <div class="accent-line"></div>
+            </div>
+            <p>
+                The Sukhoi Su-35 (NATO reporting name: <strong>Flanker-E</strong>) is a single-seat, twin-engine 
+                deeply modernized 4++ generation multirole air-superiority fighter. Designed as an interim platform 
+                bridging legacy fourth-generation fighters with fifth-generation technologies, the Su-35 eliminates 
+                the need for airbrakes by utilizing automated control surfaces and thrust vectoring.
+            </p>
+
+            <p>
+                The aircraft performed its maiden flight on 
+                <strong>19 February 2008</strong>. 
+                Powered by twin Saturn AL-41F1S turbofans featuring independently canted 3D thrust-vectoring nozzles, 
+                the Su-35 achieves exceptional high angle-of-attack maneuverability, executing post-stall maneuvers 
+                such as Pugachev's Cobra, the Frolov Chakra (Kulbit), and post-stall pitch reversals.
+            </p>
+        </section>
+        
+        <div class="section-line"></div>
+
+        <section data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <h2><i class='bx bx-info-circle'></i> Sukhoi Su-35 (NATO: Flanker-E)</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                    <td>Manufacturer</td>
+                    <td>Sukhoi (United Aircraft Corporation)</td>
+                    </tr>
+
+                    <tr>
+                    <td>First Flight</td>
+                    <td>19 February 2008</td>
+                    </tr>
+
+                    <tr>
+                    <td>Introduced</td>
+                    <td>2014</td>
+                    </tr>
+
+                    <tr>
+                    <td>NATO Reporting Name</td>
+                    <td>Flanker-E</td>
+                    </tr>
+
+                    <tr>
+                    <td>Length</td>
+                    <td>21.9 m <i>(71 ft, 10 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Wingspan</td>
+                    <td>15.3 m <i>(50 ft, 2 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Height</td>
+                    <td>5.9 m <i>(19 ft, 4 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Crew</td>
+                    <td>1 <i>(single pilot)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Powerplant</td>
+                    <td>2 × Saturn AL-41F1S afterburning turbofans with 3D TVC</td>
+                    </tr>
+
+                    <tr>
+                    <td>Maximum Speed</td>
+                    <td><strong>≈</strong> Mach 2.25 (2,400 km/h)</td>
+                    </tr>
+
+                    <tr>
+                    <td>Service Ceiling <i>(max.)</i></td>
+                    <td>18,000 m (59,000 ft)</td>
+                    </tr>
+
+                    <tr>
+                    <td>Ferry Range</td>
+                    <td>Approximately 4,500 km (with external drop tanks)</td>
+                    </tr>
+
+                    <tr>
+                    <td>Payload / Hardpoints</td>
+                    <td>12 external hardpoints <i>(up to 8,000 kg payload capacity)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Maximum Takeoff Weight</td>
+                    <td>Approximately 34,500 kg</td>
+                    </tr>
+
+                    <tr>
+                    <td>Thrust Vectoring</td>
+                    <td>3D thrust-vectoring nozzles</td>
+                    </tr>
+
+                    <tr>
+                    <td>Supercruise</td>
+                    <td>Limited supersonic speed without afterburner</td>
+                    </tr>
+
+                    <tr>
+                    <td>Operational Status</td>
+                    <td>In active service</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+            <i>
+            * The AL-41F1S engine is a derivative of the AL-31F with increased thrust and integrated 3D thrust-vectoring nozzles, later paving the way for the Su-57 propulsion system.
+            </i>
+            </p>
+        </section>
+
+        <div class="section-line-padding"></div>
+
+        <section data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bx-microchip'></i> Avionics & Sensor Suite</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>System</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><strong>Irbis-E PESA Radar</strong></td>
+                        <td>N035 Irbis-E passive electronically scanned array radar, capable of detecting air targets up to 400 km away and tracking 30 targets while simultaneously engaging 8.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>OLS-35 Optoelectronic Suite</strong></td>
+                        <td>Nose-mounted infrared search and track (IRST) system incorporating an optical sight, thermal imaging detector, and laser rangefinder/target designator.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Khibiny-M Suite</strong></td>
+                        <td>Wingtip-mounted L175M Khibiny-M electronic warfare complex providing radar warning receiver coverage, threat identification, and active radio-jamming countermeasures.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Glass Cockpit Layout</strong></td>
+                        <td>Modern glass cockpit featuring two 15-inch MFI-35 multi-function color LCD displays, a wide-angle head-up display (IKSH-1M), and integrated hands-on-throttle-and-stick (HOTAS) controls.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Heavy Armament Loadout</strong></td>
+                        <td>Capable of launching R-77-1 and ultra-long-range R-37M air-to-air missiles, alongside anti-radiation (Kh-31P) and precision-guided anti-ship strike munitions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo"><i class='bx bxs-plane-take-off logo-icon'></i> <span class="logo-accent">SUKHOI</span> STUDIO</div>
-            <p>Celebrating the Legacy of Sukhoi Aviation</p>
-            <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
-            <div class="footer-line"></div>
-            <p id="warning">
-                * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
-                Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
-                Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru" target="_blank">United Aircraft Corporation (UAC)</a>.
-            </p>
-        </div>
+    <div class="footer-content">
+        <div class="logo"><img src="../assets/favicon-32x32.png" alt="Logo" class="logo-icon"> <span class="logo-accent">SUKHOI</span> STUDIO</div>
+        <p>Celebrating the Legacy of Sukhoi Aviation</p>
+        <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
+        <div class="footer-line"></div>
+        <p id="warning">
+            * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
+            Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
+            Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru/en/" target="_blank">United Aircraft Corporation (UAC)</a>.
+        </p>
+    </div>
     </footer>
 
-        <!-- 1. Load the animation framework -->
-    <script src="https://unpkg.com"></script>
-    
-    <!-- CRITICAL FIX: Step out of 'subwebs' to run your custom script -->
-    <script src="../script.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

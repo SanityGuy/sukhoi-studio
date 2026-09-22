@@ -3,47 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhoi Studio | Aircraft Details</title>
-    
-    <!-- Step out of 'subwebs', go into 'assets' to find the favicon -->
-    <link rel="icon" href="../assets/favicon.ico">
-    
-    <!-- Working Third-Party CDN Libraries -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link href="https://unpkg.com" rel="stylesheet">
-    <link href="https://unpkg.com" rel="stylesheet">
-    
-    <!-- CRITICAL FIX: Step out of 'subwebs' to link your main stylesheet -->
-    <link rel="stylesheet" href="../style.css">
+    <title>Su-47 Berkut | Sukhoi Studio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-
-
 <body>
     <nav>
         <div class="nav-content">
             <div class="logo">
-                <i class='bx bxs-plane-take-off logo-icon'></i>
+                <img src="../assets/favicon-32x32.png" alt="Sukhoi Studio Logo" class="logo-icon">
                 <span class="logo-accent">SUKHOI</span> STUDIO
             </div>
             <ul class="nav-links">
-                <!-- Step OUT of subwebs folder for home and history -->
-                <li><a href="../index.html"><i class='bx bx-home'></i> Home</a></li>
-                <li><a href="../history.html"><i class='bx bx-history'></i> History</a></li>
-                
+                <li><a href="/index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="/history.html"><i class='bx bx-history'></i> History</a></li>
+
                 <li class="dropdown-trigger">
-                    <a href="su57.html" class="dropdown-link-title" aria-haspopup="true">
+                    <a href="#info" class="dropdown-link-title" aria-haspopup="true">
                         <i class='bx bxs-paper-plane'></i> Aircraft Fleet 
                         <i class='bx bx-chevron-down chevron-icon'></i>
                     </a>
                     <div class="dropdown-menu">
                         <div class="dropdown-grid">
+
                             <div class="dropdown-column featured-jet">
                                 <div class="jet-tag">Flagship</div>
                                 <h3>Su-57 Felon</h3>
                                 <p>Russia's premier 5th-generation stealth air platform.</p>
                                 <a href="su57.html" class="btn-dropdown">Explore Specs →</a>
                             </div>
-                            <!-- These files are side-by-side in the same subwebs folder. NO SLASHES OR DOTS! -->
+
                             <div class="dropdown-column">
                                 <span class="column-title">4th Gen Legacy</span>
                                 <ul class="submenu-links">
@@ -52,6 +48,7 @@
                                     <li><a href="su34.html"><i class='bx bx-target-lock'></i> Su-34 Fullback</a></li>
                                 </ul>
                             </div>
+
                             <div class="dropdown-column">
                                 <span class="column-title">Modern Fleet</span>
                                 <ul class="submenu-links">
@@ -65,47 +62,210 @@
                 </li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://w3.org" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
-                <svg class="moon-icon" xmlns="http://w3.org" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                 </svg>
             </button>
         </div>
     </nav>
 
-    <main class="placeholder-container">
-        <div class="placeholder-card" data-aos="fade-up" data-aos-duration="800">
-            <div class="radar-scan">
-                <i class='bx bx-radar placeholder-icon'></i>
-            </div>
+    <header class="hero su47">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>SU-47 BERKUT</h1>
-            <div class="accent-line m-auto"></div>
-            <p id="warning">Web Not Available Yet</p>
-            <a href="../index.html" class="btn"><i class='bx bx-left-arrow-alt'></i> Return to Hangar</a>
+            <p>An experimental technology demonstrator featuring revolutionary forward-swept wings, extensive composite construction, and extreme low-speed agility.
+            </p>
+            <a class="btn" href="#info"><i class="bx bx-radar"></i> Search for specifications</a>
         </div>
-    </main>
+    </header>
+    
+    <div class="container">
+        <section id="info" data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bx-shape-polygon'></i> Forward-Swept Aerodynamics & Design</h2>
+                <div class="accent-line"></div>
+            </div>
+            <p>
+                The Sukhoi Su-47 <strong>Berkut</strong> (Golden Eagle), initially designated S-37, was an 
+                experimental supersonic jet fighter demonstrator developed by Sukhoi. Designed to explore advanced fly-by-wire 
+                flight control systems and high-agility wing geometry, its defining characteristic was its radical 
+                <strong>forward-swept wings (FSW)</strong>.
+            </p>
+
+            <p>
+                The aircraft made its inaugural flight on 
+                <strong>25 September 1997</strong>. 
+                The forward-swept configuration provided superior lift-to-drag ratios, reduced takeoff and landing distances, 
+                and outstanding subsonic maneuverability at high angles of attack. Structural data and composite manufacturing 
+                techniques gathered from the Berkut program directly laid the foundation for Russia's 5th-generation Su-57 fighter.
+            </p>
+        </section>
+        
+        <div class="section-line"></div>
+
+        <section data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <h2><i class='bx bx-info-circle'></i> Sukhoi Su-47 (Golden Eagle)</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                    <td>Manufacturer</td>
+                    <td>Sukhoi Design Bureau</td>
+                    </tr>
+
+                    <tr>
+                    <td>First Flight</td>
+                    <td>25 September 1997</td>
+                    </tr>
+
+                    <tr>
+                    <td>Project Status</td>
+                    <td>Experimental Technology Demonstrator (1 built)</td>
+                    </tr>
+
+                    <tr>
+                    <td>NATO Reporting Name</td>
+                    <td>Firkin <i>(Unofficial)</i> / Berkut</td>
+                    </tr>
+
+                    <tr>
+                    <td>Length</td>
+                    <td>22.6 m <i>(74 ft, 2 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Wingspan</td>
+                    <td>16.7 m <i>(54 ft, 9 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Height</td>
+                    <td>6.3 m <i>(20 ft, 8 in)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Crew</td>
+                    <td>1 <i>(test pilot)</i></td>
+                    </tr>
+
+                    <tr>
+                    <td>Powerplant</td>
+                    <td>2 × Soloviev D-30F6 afterburning turbofans</td>
+                    </tr>
+
+                    <tr>
+                    <td>Maximum Speed</td>
+                    <td>Mach 1.65 (1,710 km/h)</td>
+                    </tr>
+
+                    <tr>
+                    <td>Service Ceiling <i>(max.)</i></td>
+                    <td>18,000 m (59,000 ft)</td>
+                    </tr>
+
+                    <tr>
+                    <td>Ferry Range</td>
+                    <td>Approximately 3,300 km</td>
+                    </tr>
+
+                    <tr>
+                    <td>Internal Bay Capacity</td>
+                    <td>Experimental internal weapon bay for stealth carriage testing</td>
+                    </tr>
+
+                    <tr>
+                    <td>Maximum Takeoff Weight</td>
+                    <td>Approximately 35,000 kg</td>
+                    </tr>
+
+                    <tr>
+                    <td>Wing Configuration</td>
+                    <td>Forward-Swept Wings (FSW) with forward canards</td>
+                    </tr>
+
+                    <tr>
+                    <td>Composite Materials</td>
+                    <td>Over 13% composite carbon-fiber construction</td>
+                    </tr>
+
+                    <tr>
+                    <td>Operational Status</td>
+                    <td>Retired / Tech Demonstrator</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+            <i>
+            * Forward-swept wings experience high twisting forces (aeroelastic divergence). Sukhoi engineers resolved this by using custom-molded carbon-fiber composites tailored to resist torsional bending.
+            </i>
+            </p>
+        </section>
+
+        <div class="section-line-padding"></div>
+
+        <section data-aos="fade-up" data-aos-duration="800">
+            <div class="section-header">
+                <h2><i class='bx bx-microchip'></i> Experimental Technology & Systems</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>System</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><strong>Forward-Swept Wing Geometry</strong></td>
+                        <td>Provides unexcelled low-speed agility and stall resistance by delaying airflow separation at high angles of attack compared to aft-swept wings.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Fly-By-Wire Flight Controls</strong></td>
+                        <td>Multi-channel digital fly-by-wire system compensating for extreme aerodynamic instability and continuously adjusting control surface angles.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Composite Airframe Structure</strong></td>
+                        <td>Extensive structural use of high-strength carbon-fiber composite panels woven to withstand twisting forces generated along the wing structure.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Internal Weapon Carriage</strong></td>
+                        <td>Early prototype internal weapons bay positioned along the ventral centerline to reduce radar cross-section (RCS) during stealth tests.</td>
+                        </tr>
+
+                        <tr>
+                        <td><strong>Advanced Pilot Interface</strong></td>
+                        <td>Equipped with a high-G inclined ejection seat (30 degrees) and side-stick fly-by-wire control layout designed to assist pilot g-tolerance.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo"><i class='bx bxs-plane-take-off logo-icon'></i> <span class="logo-accent">SUKHOI</span> STUDIO</div>
-            <p>Celebrating the Legacy of Sukhoi Aviation</p>
-            <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
-            <div class="footer-line"></div>
-            <p id="warning">
-                * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
-                Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
-                Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru" target="_blank">United Aircraft Corporation (UAC)</a>.
-            </p>
-        </div>
+    <div class="footer-content">
+        <div class="logo"><img src="../assets/favicon-32x32.png" alt="Logo" class="logo-icon"> <span class="logo-accent">SUKHOI</span> STUDIO</div>
+        <p>Celebrating the Legacy of Sukhoi Aviation</p>
+        <p>Made personally by <a href="https://github.com" target="_blank" id="github">SanityGuy</a></p>
+        <div class="footer-line"></div>
+        <p id="warning">
+            * This website is MERELY a fanmade project. It is not affiliated with the Sukhoi Design Bureau or any of its affiliates.<br>
+            Please note: The independent Sukhoi Company has been legally consolidated, and standalone official Sukhoi corporate websites no longer exist. <br>
+            Official military aviation updates are hosted exclusively on the parent portal of the <a href="https://uacrussia.ru/en/" target="_blank">United Aircraft Corporation (UAC)</a>.
+        </p>
+    </div>
     </footer>
 
-        <!-- 1. Load the animation framework -->
-    <script src="https://unpkg.com"></script>
-    
-    <!-- CRITICAL FIX: Step out of 'subwebs' to run your custom script -->
-    <script src="../script.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
